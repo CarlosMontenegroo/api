@@ -6,8 +6,7 @@ let callAPI = () => {
   .then(res => res.json())
   .then(data => {
     LlamarAPI.innerText = JSON.stringify(data);
-
-
+    
   })
 }
 ApiBoton.addEventListener("click", callAPI);
